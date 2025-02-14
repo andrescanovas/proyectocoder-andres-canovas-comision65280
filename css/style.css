@@ -500,7 +500,7 @@ input, textarea{
 }
 
 
-generando error 
+
 
 
 @media(max-width:600px){
@@ -518,6 +518,7 @@ generando error
         padding: 50px;
         width: 400px;
     }
+
     input{
         padding: 20px;
     }
