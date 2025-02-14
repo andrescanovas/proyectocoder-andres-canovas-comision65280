@@ -55,7 +55,7 @@ nav ul a:hover{
     
 }
 
-/* Cambia el color del icono del menú hamburguesa */
+/* Cambia el color del menú hamburguesa */
 .navbar-toggler {
     border: none; /* Quita el borde si lo tiene */
 }
