@@ -1,0 +1,549 @@
+/*  Paleta de colores:
+
+    Color Principal (Fondo/Neutro Oscuro): #1F1F1F (Negro Carbón)
+    Color Secundario (Contraste/Detalles): #FFB02E (Mostaza/Dorado)
+    Color de Resalte (Accentos/Vibrante): #E63946 (Rojo Intenso, evoca ketchup y carne asada)
+    Color de Apoyo (Textos secundarios): #F4EAE0 (Crema/Blanco Hueso)
+    Color Complementario (Equilibrio): #8A4F27 (Marrón Pan/Tostado)
+
+ Cómo usar esta paleta en la web:
+
+    Fondo principal: #1F1F1F
+    Botones y elementos de acción: #FFB02E o #E63946
+    Textos principales: #F4EAE0
+    Textos secundarios/Detalles: #8A4F27
+    Hover o efectos secundarios: Usa #E63946 para resaltar. */
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    display: none;
+}
+
+
+
+.fondo-nav{
+    background-color:#1F1F1F;
+    padding: 30px;
+    
+}
+
+.fondo-nav a{
+    font-size: 25px;
+    /* font-family: "Lobster", serif;  */
+    font-family: "Bebas Neue", serif;
+    color: #FFB02E;
+    text-decoration: none;
+    
+}
+
+nav ul a:hover{
+    color: #B22222 !important;
+    font-family: "Bebas Neue", serif;
+    /* font-family: "Lobster", serif; */ 
+    text-decoration: underline;
+    
+    
+}
+
+/* Cambia el color del icono del menú hamburguesa */
+.navbar-toggler {
+    border: none; /* Quita el borde si lo tiene */
+}
+
+/* Cambia el color del icono hamburguesa */
+.navbar-toggler-icon {
+    filter: invert(59%) sepia(97%) saturate(459%) hue-rotate(1deg) brightness(102%) contrast(101%);
+}
+
+
+
+
+
+/* 
+
+header{
+    background-color:#1F1F1F;
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+
+
+li{ list-style: none;}
+
+header nav ul{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    
+    
+    
+    
+}
+
+header nav ul a{
+    font-size: 25px;
+    /* font-family: "Lobster", serif; *-/
+    font-family: "Bebas Neue", serif;
+    color: #FFB02E;
+    text-decoration: none;
+
+}
+
+nav ul a:hover{
+    color: #B22222;
+    font-family: "Bebas Neue", serif;
+    /* font-family: "Lobster", serif; *-/ 
+    text-decoration: underline;
+    
+    
+} */
+
+
+
+
+main{
+    background-color: #1F1F1F;
+}
+
+
+
+
+
+
+
+
+    
+footer {
+        background-color: #1F1F1F;
+        color: #F4EAE0;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+
+    /* Cambia el color del icono del menú hamburguesa */
+.navbar-toggler-icon {
+    color: #FFB02E;
+    border: #FFB02E;
+}
+
+
+
+
+/* FIN GLOBAL*/
+
+
+/* ---------------------MENU ------------------*/
+.galeria{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+
+.galeria-item{
+
+    width: 100%;
+    max-width: 350px; 
+    text-align: center;
+    border: 2px solid #8A4F27;
+    border-radius: 5px;
+    height: 400px;
+    background-color: #8A4F27;
+
+}
+
+.galeria img {
+
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.galeria p{
+    
+    
+    font-size: 18px;
+    font-family: "Lobster", serif;
+    /* font-family: "Bebas Neue", serif; */
+    font-style: normal;
+    color: #F4EAE0;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-caption h1 {
+    font-family: 'Lobster', cursive;  /* Fuente decorativa */
+    font-size: 4rem;  /* Tamaño grande */
+    font-weight: bold;
+    color: white;  /* Texto blanco */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);  /* Sombra para mejorar visibilidad */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px 20px;
+    border-radius: 10px;  /* Bordes redondeados */
+}
+
+.menu-contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4EAE0;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    
+
+
+}
+
+.menu-contenedor h2{
+    
+    font-family: "Bebas Neue", serif;
+    text-align: center;
+    color: #FFB02E;
+    font-size: 70px;
+    padding: 30px;
+
+
+}
+
+.menu-catalogo{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "column-1 column-2 column-3";
+
+
+}
+
+.column-1{
+    grid-area: column-1;
+}
+
+.column-2{
+    grid-area: column-2;
+}
+
+.column-3{
+    grid-area: column-3;
+}
+
+
+
+.menu-catalogo h3{
+    
+    font-family: "Bebas Neue", serif;
+    /* font-family: "Lobster", serif; */
+    text-align: center;
+    color: #B22222;
+    font-size: 40px;
+    padding: 30px;
+
+
+}
+
+
+
+.menu-catalogo li {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", serif;
+    text-align: left;
+    color: #8A4F27;
+    font-size: 30px;
+
+
+}
+
+.menu-catalogo p {
+    font-size: 20px;
+    color: #1F1F1F;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    
+
+
+}
+
+
+/* -------------------- FIn menu ----------------*/
+
+/*------------- SUCURSALES -----------------*/
+
+.contenedor-sucursales-section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    
+
+
+}
+
+.contenedor-sucursales{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 30px;
+
+
+}
+
+
+.sucursales{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #1F1F1F;
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.sucursales a {
+    font-size: 40px;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: #FFB02E;
+    text-decoration: none;
+    border: solid 2px #F4EAE0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sucursales p {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: #F4EAE0;
+    text-decoration: none;
+}
+
+.sucursales h3{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: #FFB02E;
+    text-decoration: none;
+
+}
+
+
+.sucursales a:hover{
+    color: #B22222;
+    
+    
+    
+}
+
+
+/* NOSOTROS */
+
+
+.nosotros-grid img{
+    width: 100%;
+    height: 100%;
+}
+
+.nosotros-grid{
+
+    display: grid;
+    /* Cabntidad y tamaño */
+    /* grid-template-columns: 30% 30% 30%; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px ; */
+    grid-template-rows: repeat(2,500px) ;
+    grid-template-areas:
+    "textonos01 img-01 img-02"
+    "img-03 img-04 img-05"
+   ;
+    gap: 10px;
+    padding: 35px;
+}
+
+
+.nosotros-grid-img01{
+    grid-area: img-01;
+}
+.nosotros-grid-img02{
+    grid-area: img-02;
+}
+.nosotros-grid-img03{
+    grid-area: img-03;
+}
+.nosotros-grid-img04{
+    grid-area: img-04;
+}
+.nosotros-grid-img05{
+    grid-area: img-05;}
+
+    
+.texto-contacto2{
+    grid-area: textonos01;
+    color: #F4EAE0;
+    font-size: 25px;
+    font-family: "Bebas Neue", serif;
+    text-align: left;
+    padding-right: 35px;
+    
+    
+    
+
+}
+
+.nosotros-grid h2{
+
+    
+    grid-area: textonos01;
+    color: #F4EAE0;
+    font-size: 50px;
+    font-family: "Bebas Neue", serif;
+    
+
+}
+
+
+/* FIN NOSOTROS */
+
+/* CONTACTO */
+.main-contacto{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+form{
+    
+    padding: 50px 55px;
+    box-shadow: 0 0 20px #F4EAE0;
+    border-radius: 20px ;
+    text-align: center;
+    width: 1000px;
+    background-color: #8A4F27;
+
+}
+
+.input-grupo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+form h2{
+    color: #F4EAE0;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+}
+
+label {
+
+    color: #F4EAE0;
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+
+}
+
+input, textarea{
+    padding: 20px 35px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #F4EAE0;
+    border: 2px solid #F4EAE0;
+    color: #1F1F1F;
+    outline: none;
+
+
+
+}
+
+.btn-contacto{
+    font-size: 20px;
+    color: #1F1F1F;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    /* CONTACTO */
+    
+    .main-contacto{
+        padding: 10px;
+        
+    
+    }
+
+    form{
+        padding: 50px;
+        width: 400px;
+    }
+    input{
+        padding: 20px;
+    }
+
+    /* ----FION CONTACTO--- */
+
+    /* MENU */
+
+    .menu-catalogo{
+        
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "column-1"
+        "column-2"
+        "column-3";
+    
+    
+    }
+
+    .menu-catalogo li {
+        text-align: center;
+        list-style-type: none;
+    
+    }
+
+
+
+    /* FIN MENU */
+
+
+}
