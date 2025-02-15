@@ -589,7 +589,7 @@ input, textarea{
 }
 
 
-@media(max-width:350px){
+@media(max-width:450px){
 
 
     /* CONTACTO */
@@ -625,11 +625,7 @@ input, textarea{
     
     }
 
-    .menu-catalogo ul {
-        
-        
-       
-    }
+  
     
         
     
