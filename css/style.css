@@ -530,59 +530,7 @@ input, textarea{
 
 
 
-@media(max-width:500px){
 
-
-    /* CONTACTO */
-    
-    .main-contacto{
-        padding: 10px;
-        
-        
-
-    }
-
-    form{
-        padding: 50px;
-        width: 250px;
-    }
-
-    input{
-        padding: 20px;
-    }
-
-    /* ----FION CONTACTO--- */
-
-    /* MENU */
-
-    .menu-catalogo{
-        
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "column-1"
-        "column-2"
-        "column-3";
-    
-    
-    }
-
-    .menu-catalogo li {
-        text-align: center;
-        list-style-type: none;
-    
-    }
-
-
-
-    
-
-    
-
-
-    /* FIN MENU */
-
-
-}
 
 
 
@@ -630,6 +578,61 @@ input, textarea{
 
 
     
+    
+
+    
+
+
+    /* FIN MENU */
+
+
+}
+
+
+@media(max-width:500px){
+
+
+    /* CONTACTO */
+    
+    .main-contacto{
+        padding: 10px;
+        
+        
+
+    }
+
+    form{
+        padding: 20px;
+        width: 350px;
+    }
+
+    input{
+        padding: 10px;
+    }
+
+    /* ----FION CONTACTO--- */
+
+    /* MENU */
+
+    .menu-catalogo{
+        
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "column-1"
+        "column-2"
+        "column-3";
+    
+    
+    }
+
+    .menu-catalogo li {
+        text-align: center;
+        list-style-type: none;
+    
+    }
+
+
+
     
 
     
