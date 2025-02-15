@@ -625,13 +625,37 @@ input, textarea{
     
     }
 
+    .menu-catalogo ul {
+        
+        
+       
+    }
+    
+        
+    
     .menu-catalogo li {
-        text-align: center;
-        list-style-type: none;
+        justify-content: left;
+        text-align: left;
+        
+        
+       
     
     }
 
+    .menu-catalogo h2 {
+        
+        text-align: left;
+        
+        
+    
+    }
 
+    .menu-catalogo p {
+        
+        text-align: left;
+        
+    
+    }
 
     
 
