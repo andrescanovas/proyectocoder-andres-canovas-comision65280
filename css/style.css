@@ -530,7 +530,7 @@ input, textarea{
 
 
 
-@media(max-width:600px){
+@media(max-width:500px){
 
 
     /* CONTACTO */
@@ -539,12 +539,12 @@ input, textarea{
         padding: 10px;
         
         
-    
+
     }
 
     form{
         padding: 50px;
-        width: 400px;
+        width: 250px;
     }
 
     input{
