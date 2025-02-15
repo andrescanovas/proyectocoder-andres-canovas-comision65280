@@ -523,7 +523,9 @@ input, textarea{
     border-radius: 5px;
     box-shadow: 0 0 20px;
     background-color: #FFB02E;
-
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 
@@ -660,5 +662,65 @@ input, textarea{
 
     /* FIN MENU */
 
+    /* NOSOTROS */
+
+    .nosotros-grid{
+        
+       
+        justify-items: center;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px ; */
+        grid-template-rows: 200px 200px repeat(2,300px) ;
+        grid-template-areas:
+        "textonos01"
+        "textonos01"
+        "img-01"
+        "img-05"
+       ;
+        gap: 10px;
+        padding: 35px;
+    }
+
+    .nosotros-grid p{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+    .nosotros-grid-img01{
+        grid-area: img-01;
+    }
+    .nosotros-grid-img02{
+        display: none;
+    }
+    .nosotros-grid-img03{
+        display: none;
+    }
+    .nosotros-grid-img04{
+        display: none;
+    }
+
+
+    .nosotros-grid img{
+        width: auto;
+        height: 90%;
+
+        
+        
+        
+    }
+
+    .texto-contacto2{
+        
+        
+        
+        font-family: "Bebas Neue", serif;
+        text-align: center;
+        padding-right: 1px;
+        
+        
+        
+    
+    }
 
 }
