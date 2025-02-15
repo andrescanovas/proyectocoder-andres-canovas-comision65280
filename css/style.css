@@ -119,19 +119,14 @@ main{
     background-color: #1F1F1F;
 }
 
-
-
-
-
-
-
-
     
 footer {
         background-color: #1F1F1F;
         color: #F4EAE0;
         text-align: center;
         padding: 30px 0;
+        box-shadow: 0 0 20px #FFB02E;
+
     }
 
 
@@ -217,6 +212,9 @@ footer {
     background-color: #F4EAE0;
     padding-bottom: 35px;
     padding-top: 35px;
+    background-image: url('../medios/img/fondo-contactos.webp');
+    background-size: cover;
+    background-position: center;
     
 
 
@@ -234,9 +232,11 @@ footer {
 }
 
 .menu-catalogo{
-    padding: 30px;
+    padding: 35px;
+    margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     grid-template-areas: 
     "column-1 column-2 column-3";
 
@@ -245,14 +245,34 @@ footer {
 
 .column-1{
     grid-area: column-1;
+    padding: 25px ;
+    box-shadow: 0 0 10px #FFB02E;
+    border-radius: 20px ;
+    text-align: center;
+    background-color: #1F1F1F;
+    
+
+
 }
 
 .column-2{
     grid-area: column-2;
+    padding: 25px ;
+    box-shadow: 0 0 10px #FFB02E;
+    border-radius: 20px ;
+    text-align: center;
+    background-color: #1F1F1F;
+
 }
 
 .column-3{
     grid-area: column-3;
+    padding: 25px ;
+    box-shadow: 0 0 10px #FFB02E;
+    border-radius: 20px ;
+    text-align: center;
+    background-color: #1F1F1F;
+
 }
 
 
@@ -283,7 +303,7 @@ footer {
 
 .menu-catalogo p {
     font-size: 20px;
-    color: #1F1F1F;
+    color: #F4EAE0;
     font-family: "Bebas Neue", serif;
     text-transform: uppercase;
     
@@ -435,11 +455,17 @@ footer {
 /* FIN NOSOTROS */
 
 /* CONTACTO */
+
 .main-contacto{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('../medios/img/fondo-contactos.webp');
+    background-size: cover;
+    background-position: center;
+
+    
     
 
 }
@@ -447,11 +473,11 @@ footer {
 form{
     
     padding: 50px 55px;
-    box-shadow: 0 0 20px #F4EAE0;
+    box-shadow: 0 0 20px #FFB02E;
     border-radius: 20px ;
     text-align: center;
     width: 1000px;
-    background-color: #8A4F27;
+    background-color: #1F1F1F;
 
 }
 
@@ -463,14 +489,14 @@ form{
 }
 
 form h2{
-    color: #F4EAE0;
+    color: #FFB02E;
     font-family: "Bebas Neue", serif;
     text-transform: uppercase;
 }
 
 label {
 
-    color: #F4EAE0;
+    color: #FFB02E;
     font-size: 20px;
     font-family: "Bebas Neue", serif;
     text-transform: uppercase;
@@ -482,7 +508,7 @@ input, textarea{
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: #F4EAE0;
-    border: 2px solid #F4EAE0;
+    border:1px solid #FFB02E;
     color: #1F1F1F;
     outline: none;
 
@@ -496,6 +522,7 @@ input, textarea{
     border: 0;
     border-radius: 5px;
     box-shadow: 0 0 20px;
+    background-color: #FFB02E;
 
 }
 
@@ -510,6 +537,7 @@ input, textarea{
     
     .main-contacto{
         padding: 10px;
+        
         
     
     }
@@ -544,6 +572,67 @@ input, textarea{
     
     }
 
+
+
+    
+
+    
+
+
+    /* FIN MENU */
+
+
+}
+
+
+
+@media(max-width:850px){
+
+
+    /* CONTACTO */
+    
+    .main-contacto{
+        padding: 10px;
+        
+        
+    
+    }
+
+    form{
+        padding: 50px;
+        width: 400px;
+    }
+
+    input{
+        padding: 20px;
+    }
+
+    /* ----FION CONTACTO--- */
+
+    /* MENU */
+
+    .menu-catalogo{
+        
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "column-1"
+        "column-2"
+        "column-3";
+    
+    
+    }
+
+    .menu-catalogo li {
+        text-align: center;
+        list-style-type: none;
+    
+    }
+
+
+    
+    
+
+    
 
 
     /* FIN MENU */
