@@ -126,6 +126,8 @@ footer {
         text-align: center;
         padding: 30px 0;
         box-shadow: 0 0 20px #FFB02E;
+        font-family: "Bebas Neue", serif;
+        text-transform: uppercase;
 
     }
 
@@ -199,8 +201,8 @@ footer {
     
     
     font-size: 18px;
-    font-family: "Lobster", serif;
-    /* font-family: "Bebas Neue", serif; */
+    /* font-family: "Lobster", serif; */
+    font-family: "Bebas Neue", serif;
     font-style: normal;
     color: #F4EAE0;
     text-decoration: none;
@@ -251,7 +253,8 @@ footer {
     
 }
 
-.h5-home{ font-family: "Bebas Neue", serif;
+.h5-home{ 
+    font-family: "Bebas Neue", serif;
     text-transform: uppercase;
     color: black;
     font-size: 60px;
@@ -395,17 +398,30 @@ footer {
 
 
 .sucursales{
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: center;
+    align-items:end;
     background-color: #1F1F1F;
-    height: 250px;
+    height: 300px;
     width: 200px;
     border-radius: 5px;
 }
 
+
+.sucursal{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    
+   
+
+}
+
 .sucursales a {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Bebas Neue", serif;
     text-transform: uppercase;
     color: #FFB02E;
@@ -426,7 +442,7 @@ footer {
 
 .sucursales h3{
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     font-family: "Bebas Neue", serif;
     text-transform: uppercase;
     color: #FFB02E;
@@ -437,6 +453,9 @@ footer {
 
 .sucursales a:hover{
     color: #B22222;
+    border: solid 2px #B22222;
+    padding: 5px;
+    border-radius: 5px;
     
     
     
@@ -821,6 +840,20 @@ input, textarea{
     
         
     }
+
+
+    /* sucursales */
+
+    .contenedor-sucursales{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 30px;
+
+
+}
+
 
 
 }
