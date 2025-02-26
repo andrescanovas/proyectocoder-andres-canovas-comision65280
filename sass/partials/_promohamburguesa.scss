@@ -1,0 +1,43 @@
+.div-promohamburguesa{
+    padding: 35px;
+    background-color: $negro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .div-promohamburguesa-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .h2-promohamburguesa{
+            color: $blanco;
+
+        }
+        .h3-promohamburguesa{
+            color: $blanco;
+            padding: 30px;
+        }
+
+    }
+    .boton-bait-promohamburguesa{
+                padding: 5px;
+                color: $negro;
+                border: 0;
+                border-radius: 5px;
+                box-shadow: 0 0 20px;
+                background-color: $dorado;
+                font-family: "Bebas Neue", serif;
+                text-transform: uppercase;
+                font-size: 30px;
+                text-decoration: none;
+                display: inline-block; /* Para que el enlace pueda moverse */
+                transition: transform 0.1s ease-in-out; /* Efecto suave */
+        
+    }
+   
+
+    .boton-bait-promohamburguesa:hover {
+        transform: translateX(500px);
+
+}
+
+}
