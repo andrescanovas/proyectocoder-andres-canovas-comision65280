@@ -1,0 +1,75 @@
+
+.main-contacto {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../medios/img/fondo-contactos.webp');
+    background-size: cover;
+    background-position: center;
+
+    form {
+
+        padding: 50px 55px;
+        box-shadow: 0 0 20px $dorado;
+        border-radius: 20px;
+        text-align: center;
+        width: 1000px;
+        background-color: $negro;
+
+        h2 {
+            color: $dorado;
+            font-family: "Bebas Neue", serif;
+            text-transform: uppercase;
+        }
+
+        .input-grupo {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            label {
+
+                color: $dorado;
+                font-size: 20px;
+                font-family: "Bebas Neue", serif;
+                text-transform: uppercase;
+
+            }
+
+
+            input,
+            textarea {
+                padding: 20px 35px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                background-color: #F4EAE0;
+                border: 1px solid $dorado;
+                color: $negro;
+                outline: none;
+
+
+
+            }
+
+            .btn-contacto {
+                font-size: 20px;
+                color: $negro;
+                border: 0;
+                border-radius: 5px;
+                box-shadow: 0 0 20px;
+                background-color: $dorado;
+                font-family: "Bebas Neue", serif;
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+        }
+
+
+
+    }
+
+
+
+
+}

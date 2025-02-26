@@ -1,0 +1,44 @@
+header {
+    .fondo-nav {
+        background-color: $negro;
+        padding: 30px;
+
+        /* Cambia el color del menú hamburguesa */
+        .navbar-toggler {
+            border: none;
+            /* Quita el borde si lo tiene */
+        }
+
+        /* Cambia el color del icono hamburguesa */
+        .navbar-toggler-icon {
+            filter: invert(59%) sepia(97%) saturate(459%) hue-rotate(1deg) brightness(102%) contrast(101%);
+        }
+
+        h1 {
+            display: none;
+        }
+
+
+        a {
+            font-size: 25px;
+            /* font-family: "Lobster", serif;  */
+            font-family: "Bebas Neue", serif;
+            color: $dorado;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: #B22222 !important;
+            font-family: "Bebas Neue", serif;
+            /* font-family: "Lobster", serif; */
+            text-decoration: underline;
+
+
+        }
+
+    }
+
+
+
+}

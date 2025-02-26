@@ -1,0 +1,356 @@
+main {
+    background-color: $negro;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-home-rectangular {
+        width: 100%;
+        height: 70% !important;
+
+    }
+
+    .home-novedades {
+        padding: 35px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 400px 400px;
+        grid-template-areas:
+            "card01home card02home"
+            "card01home card03home";
+
+        .text-nov-home {
+            font-family: "Bebas Neue", serif;
+            text-transform: uppercase;
+            color: black;
+            background-color: $negro;
+            font-size: 40px;
+            box-shadow: 0 0 10px $dorado;
+
+            .h5-home {
+                font-family: "Bebas Neue", serif;
+                text-transform: uppercase;
+                color: black;
+                font-size: 60px;
+
+            }
+
+        }
+    }
+
+    .card01home {
+        grid-area: card01home;
+    }
+
+    .card02home {
+        grid-area: card02home;
+    }
+
+    .card03home {
+        grid-area: card03home;
+    }
+
+
+    // FIN DE NOVEDADES
+
+    .galeria {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .galeria-item {
+            
+            @include main-galeria-item(30%,350px);
+            text-align: center;
+            border: 2px solid #8A4F27;
+            border-radius: 5px;
+            background-color: #8A4F27;
+
+
+
+            p {
+                font-size: 20px;
+                /* font-family: "Lobster", serif; */
+                font-family: "Bebas Neue", serif;
+                font-style: normal;
+                color: #F4EAE0;
+                text-decoration: none;
+                padding: 10px;
+            }
+        }
+    }
+
+    // FIN GALERIA HOME
+
+    // MENU
+
+    .menu-contenedor {
+        display: flex;
+        flex-direction: column;
+        background-color: #F4EAE0;
+        padding-bottom: 35px;
+        padding-top: 35px;
+        background-image: url('../medios/img/fondo-contactos.webp');
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+
+            font-family: "Bebas Neue", serif;
+            text-align: center;
+            color: $dorado;
+            font-size: 70px;
+            padding: 30px;
+
+
+        }
+
+        .menu-catalogo {
+            padding: 35px;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-areas:
+                "column-1 column-2 column-3";
+
+            .column-1 {
+                grid-area: column-1;
+                padding: 25px;
+                box-shadow: 0 0 10px $dorado;
+                border-radius: 20px;
+                text-align: center;
+                background-color: $negro;
+
+
+
+            }
+
+            .column-2 {
+                grid-area: column-2;
+                padding: 25px;
+                box-shadow: 0 0 10px $dorado;
+                border-radius: 20px;
+                text-align: center;
+                background-color: $negro;
+
+            }
+
+            .column-3 {
+                grid-area: column-3;
+                padding: 25px;
+                box-shadow: 0 0 10px $dorado;
+                border-radius: 20px;
+                text-align: center;
+                background-color: $negro;
+
+            }
+        }
+
+        h3 {
+
+            font-family: "Bebas Neue", serif;
+            /* font-family: "Lobster", serif; */
+            text-align: center;
+            color: #B22222;
+            font-size: 40px;
+            padding: 30px;
+
+
+        }
+
+        li {
+            text-transform: uppercase;
+            font-family: "Bebas Neue", serif;
+            text-align: left;
+            color: #8A4F27;
+            font-size: 30px;
+
+
+        }
+
+        p {
+            font-size: 20px;
+            color: #F4EAE0;
+            font-family: "Bebas Neue", serif;
+            text-transform: uppercase;
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+    // FIN MENU
+    // SUCURSALES
+    .contenedor-sucursales-section {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 35px;
+        padding-top: 35px;
+
+        .contenedor-sucursales {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 30px;
+
+            .sucursales {
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                background-color: $negro;
+                height: 300px;
+                width: 200px;
+                border-radius: 5px;
+
+                .sucursal {
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    a {
+                        font-size: 30px;
+                        font-family: "Bebas Neue", serif;
+                        text-transform: uppercase;
+                        color: $dorado;
+                        text-decoration: none;
+                        border: solid 2px #F4EAE0;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 20px;
+                        font-family: "Bebas Neue", serif;
+                        text-transform: uppercase;
+                        color: #F4EAE0;
+                        text-decoration: none;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        font-size: 30px;
+                        font-family: "Bebas Neue", serif;
+                        text-transform: uppercase;
+                        color: $dorado;
+                        text-decoration: none;
+
+                    }
+
+
+                    a:hover {
+                        color: #B22222;
+                        border: solid 2px #B22222;
+                        padding: 5px;
+                        border-radius: 5px;
+
+
+
+                    }
+
+
+
+
+
+                }
+
+            }
+
+
+
+        }
+
+
+
+    }
+
+
+    // FIN SUCURSALES
+    // NOSOTROS
+
+    .nosotros-grid {
+
+        display: grid;
+        /* Cabntidad y tamaño */
+        /* grid-template-columns: 30% 30% 30%; */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px ; */
+        grid-template-rows: repeat(2, 500px);
+        grid-template-areas:
+            "textonos01 img-01 img-02"
+            "img-03 img-04 img-05"
+        ;
+        gap: 10px;
+        padding: 35px;
+
+        .texto-contacto2 {
+            grid-area: textonos01;
+            color: #F4EAE0;
+            font-size: 25px;
+            font-family: "Bebas Neue", serif;
+            text-align: left;
+            padding-right: 35px;
+
+            h2 {
+
+
+                grid-area: textonos01;
+                color: #F4EAE0;
+                font-size: 50px;
+                font-family: "Bebas Neue", serif;
+
+
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+
+
+
+        }
+    }
+
+
+    .nosotros-grid-img01 {
+        grid-area: img-01;
+    }
+
+    .nosotros-grid-img02 {
+        grid-area: img-02;
+    }
+
+    .nosotros-grid-img03 {
+        grid-area: img-03;
+    }
+
+    .nosotros-grid-img04 {
+        grid-area: img-04;
+    }
+
+    .nosotros-grid-img05 {
+        grid-area: img-05;
+    }
+
+
+    // FIN NOSOTROS
+}

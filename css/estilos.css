@@ -1,0 +1,433 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header .fondo-nav {
+  background-color: #1F1F1F;
+  padding: 30px;
+  /* Cambia el color del menú hamburguesa */
+  /* Cambia el color del icono hamburguesa */
+}
+header .fondo-nav .navbar-toggler {
+  border: none;
+  /* Quita el borde si lo tiene */
+}
+header .fondo-nav .navbar-toggler-icon {
+  filter: invert(59%) sepia(97%) saturate(459%) hue-rotate(1deg) brightness(102%) contrast(101%);
+}
+header .fondo-nav h1 {
+  display: none;
+}
+header .fondo-nav a {
+  font-size: 25px;
+  /* font-family: "Lobster", serif;  */
+  font-family: "Bebas Neue", serif;
+  color: #FFB02E;
+  text-decoration: none;
+}
+header .fondo-nav a:hover {
+  color: #B22222 !important;
+  font-family: "Bebas Neue", serif;
+  /* font-family: "Lobster", serif; */
+  text-decoration: underline;
+}
+
+main {
+  background-color: #1F1F1F;
+}
+main img {
+  width: 100%;
+  height: 100%;
+}
+main .img-home-rectangular {
+  width: 100%;
+  height: 70% !important;
+}
+main .home-novedades {
+  padding: 35px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 400px 400px;
+  grid-template-areas: "card01home card02home" "card01home card03home";
+}
+main .home-novedades .text-nov-home {
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  color: black;
+  background-color: #1F1F1F;
+  font-size: 40px;
+  box-shadow: 0 0 10px #FFB02E;
+}
+main .home-novedades .text-nov-home .h5-home {
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 60px;
+}
+main .card01home {
+  grid-area: card01home;
+}
+main .card02home {
+  grid-area: card02home;
+}
+main .card03home {
+  grid-area: card03home;
+}
+main .galeria {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .galeria .galeria-item {
+  width: 30%;
+  max-width: 350px;
+  text-align: center;
+  border: 2px solid #8A4F27;
+  border-radius: 5px;
+  background-color: #8A4F27;
+}
+main .galeria .galeria-item p {
+  font-size: 20px;
+  /* font-family: "Lobster", serif; */
+  font-family: "Bebas Neue", serif;
+  font-style: normal;
+  color: #F4EAE0;
+  text-decoration: none;
+  padding: 10px;
+}
+main .menu-contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4EAE0;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  background-image: url("../medios/img/fondo-contactos.webp");
+  background-size: cover;
+  background-position: center;
+}
+main .menu-contenedor h2 {
+  font-family: "Bebas Neue", serif;
+  text-align: center;
+  color: #FFB02E;
+  font-size: 70px;
+  padding: 30px;
+}
+main .menu-contenedor .menu-catalogo {
+  padding: 35px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "column-1 column-2 column-3";
+}
+main .menu-contenedor .menu-catalogo .column-1 {
+  grid-area: column-1;
+  padding: 25px;
+  box-shadow: 0 0 10px #FFB02E;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #1F1F1F;
+}
+main .menu-contenedor .menu-catalogo .column-2 {
+  grid-area: column-2;
+  padding: 25px;
+  box-shadow: 0 0 10px #FFB02E;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #1F1F1F;
+}
+main .menu-contenedor .menu-catalogo .column-3 {
+  grid-area: column-3;
+  padding: 25px;
+  box-shadow: 0 0 10px #FFB02E;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #1F1F1F;
+}
+main .menu-contenedor h3 {
+  font-family: "Bebas Neue", serif;
+  /* font-family: "Lobster", serif; */
+  text-align: center;
+  color: #B22222;
+  font-size: 40px;
+  padding: 30px;
+}
+main .menu-contenedor li {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", serif;
+  text-align: left;
+  color: #8A4F27;
+  font-size: 30px;
+}
+main .menu-contenedor p {
+  font-size: 20px;
+  color: #F4EAE0;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+}
+main .contenedor-sucursales-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+main .contenedor-sucursales-section .contenedor-sucursales {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+main .contenedor-sucursales-section .contenedor-sucursales .sucursales {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #1F1F1F;
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+}
+main .contenedor-sucursales-section .contenedor-sucursales .sucursales .sucursal {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .contenedor-sucursales-section .contenedor-sucursales .sucursales .sucursal a {
+  font-size: 30px;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  color: #FFB02E;
+  text-decoration: none;
+  border: solid 2px #F4EAE0;
+  padding: 5px;
+  border-radius: 5px;
+}
+main .contenedor-sucursales-section .contenedor-sucursales .sucursales .sucursal p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  color: #F4EAE0;
+  text-decoration: none;
+}
+main .contenedor-sucursales-section .contenedor-sucursales .sucursales .sucursal h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  color: #FFB02E;
+  text-decoration: none;
+}
+main .contenedor-sucursales-section .contenedor-sucursales .sucursales .sucursal a:hover {
+  color: #B22222;
+  border: solid 2px #B22222;
+  padding: 5px;
+  border-radius: 5px;
+}
+main .nosotros-grid {
+  display: grid;
+  /* Cabntidad y tamaño */
+  /* grid-template-columns: 30% 30% 30%; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px ; */
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas: "textonos01 img-01 img-02" "img-03 img-04 img-05";
+  gap: 10px;
+  padding: 35px;
+}
+main .nosotros-grid .texto-contacto2 {
+  grid-area: textonos01;
+  color: #F4EAE0;
+  font-size: 25px;
+  font-family: "Bebas Neue", serif;
+  text-align: left;
+  padding-right: 35px;
+}
+main .nosotros-grid .texto-contacto2 h2 {
+  grid-area: textonos01;
+  color: #F4EAE0;
+  font-size: 50px;
+  font-family: "Bebas Neue", serif;
+}
+main .nosotros-grid .texto-contacto2 img {
+  width: 100%;
+  height: 100%;
+}
+main .nosotros-grid-img01 {
+  grid-area: img-01;
+}
+main .nosotros-grid-img02 {
+  grid-area: img-02;
+}
+main .nosotros-grid-img03 {
+  grid-area: img-03;
+}
+main .nosotros-grid-img04 {
+  grid-area: img-04;
+}
+main .nosotros-grid-img05 {
+  grid-area: img-05;
+}
+
+.main-contacto {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../medios/img/fondo-contactos.webp");
+  background-size: cover;
+  background-position: center;
+}
+.main-contacto form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px #FFB02E;
+  border-radius: 20px;
+  text-align: center;
+  width: 1000px;
+  background-color: #1F1F1F;
+}
+.main-contacto form h2 {
+  color: #FFB02E;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+}
+.main-contacto form .input-grupo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main-contacto form .input-grupo label {
+  color: #FFB02E;
+  font-size: 20px;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+}
+.main-contacto form .input-grupo input,
+.main-contacto form .input-grupo textarea {
+  padding: 20px 35px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #F4EAE0;
+  border: 1px solid #FFB02E;
+  color: #1F1F1F;
+  outline: none;
+}
+.main-contacto form .input-grupo .btn-contacto {
+  font-size: 20px;
+  color: #1F1F1F;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 20px;
+  background-color: #FFB02E;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #1F1F1F;
+  color: #F4EAE0;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0 0 20px #FFB02E;
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 450px) {
+  .main-contacto {
+    padding: 10px;
+  }
+  .main-contacto form {
+    padding: 20px;
+    width: 350px;
+  }
+  .main-contacto form input {
+    padding: 10px;
+  }
+  .menu-contenedor h2 {
+    text-align: left;
+  }
+  .menu-contenedor .menu-catalogo {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "column-1" "column-2" "column-3" !important;
+  }
+  .menu-contenedor .menu-catalogo p {
+    text-align: left;
+  }
+  .home-novedades {
+    padding: 60px;
+    gap: 20px;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: "card01home" "card02home" "card03home" !important;
+  }
+  .home-novedades .text-nov-home {
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: black;
+    background-color: #1F1F1F;
+    font-size: 20px;
+    box-shadow: 0 0 10px #FFB02E;
+  }
+  .home-novedades .text-nov-home .h5-home {
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px !important;
+  }
+  .galeria {
+    display: none !important;
+  }
+  .contenedor-sucursales {
+    display: flex;
+    justify-content: center !important;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .nosotros-grid {
+    justify-items: center;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 200px 200px repeat(2, 300px) !important;
+    grid-template-areas: "textonos01" "textonos01" "img-01" "img-05" !important;
+    gap: 10px;
+    padding: 35px;
+  }
+  .nosotros-grid .texto-contacto2 {
+    font-family: "Bebas Neue", serif;
+    text-align: center;
+    padding-right: 1px;
+  }
+  .nosotros-grid .texto-contacto2 p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .nosotros-grid .texto-contacto2 .nosotros-grid img {
+    width: auto;
+    height: 90%;
+  }
+  .nosotros-grid-img01 {
+    grid-area: img-01;
+  }
+  .nosotros-grid-img02 {
+    display: none;
+  }
+  .nosotros-grid-img03 {
+    display: none;
+  }
+  .nosotros-grid-img04 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

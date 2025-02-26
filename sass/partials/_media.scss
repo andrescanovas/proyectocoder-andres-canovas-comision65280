@@ -1,0 +1,154 @@
+
+
+
+@media (max-width: 450px) {
+    .main-contacto {
+        padding: 10px;
+
+        form {
+            padding: 20px;
+            width: 350px;
+
+            input {
+                padding: 10px;
+            }
+        }
+    }
+    // MENU
+    .menu-contenedor {
+        h2 {
+            text-align: left;
+        }
+
+        .menu-catalogo {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            grid-template-areas:
+                "column-1"
+                "column-2"
+                "column-3" !important;
+
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+    // FIN MENU
+    // NOVEDADES
+    .home-novedades {
+        padding: 60px;
+        gap: 20px;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 400px 400px 400px;
+        grid-template-areas:
+            "card01home"
+            "card02home"
+            "card03home" !important;
+
+        .text-nov-home {
+            font-family: "Bebas Neue", serif;
+            text-transform: uppercase;
+            color: black;
+            background-color: $negro;
+            font-size: 20px;
+            box-shadow: 0 0 10px $dorado;
+
+            .h5-home {
+                font-family: "Bebas Neue", serif;
+                text-transform: uppercase;
+                color: black;
+                font-size: 30px !important;
+
+            }
+
+        }
+    }
+    // GALERIA
+    .galeria {
+
+        display: none !important;
+
+
+    }
+    // SUCURSALES
+    .contenedor-sucursales {
+        display: flex;
+        justify-content: center !important;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 30px;
+
+
+    }
+
+    // NOSOTROS
+
+    .nosotros-grid {
+
+
+        justify-items: center;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 200px 200px repeat(2, 300px) !important;
+        grid-template-areas:
+            "textonos01"
+            "textonos01"
+            "img-01"
+            "img-05" !important
+        ;
+        gap: 10px;
+        padding: 35px;
+
+        .texto-contacto2 {
+
+
+
+            font-family: "Bebas Neue", serif;
+            text-align: center;
+            padding-right: 1px;
+
+            p {
+                font-size: 15px;
+                text-align: justify;
+            }
+
+            .nosotros-grid img {
+                width: auto;
+                height: 90%;
+
+
+
+
+            }
+
+
+
+        }
+    }
+
+
+    .nosotros-grid-img01 {
+        grid-area: img-01;
+    }
+
+    .nosotros-grid-img02 {
+        display: none;
+    }
+
+    .nosotros-grid-img03 {
+        display: none;
+    }
+
+    .nosotros-grid-img04 {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+}

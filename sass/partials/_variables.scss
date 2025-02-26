@@ -1,0 +1,12 @@
+$negro: #1F1F1F;
+$dorado:#FFB02E;
+
+
+
+
+@mixin main-galeria-item ($ancho,
+$anchomax){
+    width:$ancho;
+    max-width: $anchomax;
+
+}
