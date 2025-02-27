@@ -432,6 +432,9 @@ footer {
     flex-wrap: wrap;
     padding: 30px;
   }
+  .boton-bait-promohamburguesa:hover {
+    transform: translateX(100px) !important;
+  }
   .nosotros-grid {
     justify-items: center;
     grid-template-columns: 1fr !important;
