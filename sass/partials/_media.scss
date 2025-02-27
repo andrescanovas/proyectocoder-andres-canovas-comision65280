@@ -87,7 +87,11 @@
     .boton-bait-promohamburguesa:hover {
         transform: translateX(100px) !important;
 
-}
+    }
+    .boton-bait-promohamburguesa:focus{
+        transform: translateX(-100px) !important;
+             transition-delay: 0s; 
+        }  
     // NOSOTROS
 
     .nosotros-grid {

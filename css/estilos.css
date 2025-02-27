@@ -306,8 +306,7 @@ main .nosotros-grid-img05 {
   font-family: "Bebas Neue", serif;
   text-transform: uppercase;
   font-size: 20px;
-  display: inline-block; /* Para que el enlace pueda moverse */
-  transition: transform 0s; /* Efecto suave */
+  display: inline-block;
   transition: transform 0.2s ease-in-out 1s;
 }
 .div-promohamburguesa .boton-bait-promohamburguesa:hover {
@@ -440,6 +439,10 @@ footer {
   }
   .boton-bait-promohamburguesa:hover {
     transform: translateX(100px) !important;
+  }
+  .boton-bait-promohamburguesa:focus {
+    transform: translateX(-100px) !important;
+    transition-delay: 0s;
   }
   .nosotros-grid {
     justify-items: center;
