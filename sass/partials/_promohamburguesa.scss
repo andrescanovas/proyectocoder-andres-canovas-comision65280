@@ -20,7 +20,8 @@
     }
     .boton-bait-promohamburguesa{
                 padding: 30px;
-                
+                color: $negro;
+                text-decoration: none;
                 border: 0;
                 border-radius: 5px;
                 box-shadow: 0 0 20px;
@@ -32,16 +33,21 @@
                 display: inline-block; /* Para que el enlace pueda moverse */
                 transition: transform 0.0s; /* Efecto suave */
                 transition: transform 0.2s ease-in-out 1s;
-                a{
-                    color: $negro;
-                    text-decoration: none;} 
+               
+                     
         
     }
    
 
     .boton-bait-promohamburguesa:hover {
-        transform: translateX(850px);
-        transition-delay: 0s; /* Se mueve inmediatamente */
+          transform: translateX(850px);
+          transition-delay: 0s; 
+      }
+
+    .boton-bait-promohamburguesa:focus{
+        transform: translateX(-850px);
+         transition-delay: 0s; 
     }
-    
+
+   
 }

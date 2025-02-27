@@ -297,6 +297,8 @@ main .nosotros-grid-img05 {
 }
 .div-promohamburguesa .boton-bait-promohamburguesa {
   padding: 30px;
+  color: #1F1F1F;
+  text-decoration: none;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 0 20px;
@@ -308,13 +310,13 @@ main .nosotros-grid-img05 {
   transition: transform 0s; /* Efecto suave */
   transition: transform 0.2s ease-in-out 1s;
 }
-.div-promohamburguesa .boton-bait-promohamburguesa a {
-  color: #1F1F1F;
-  text-decoration: none;
-}
 .div-promohamburguesa .boton-bait-promohamburguesa:hover {
   transform: translateX(850px);
-  transition-delay: 0s; /* Se mueve inmediatamente */
+  transition-delay: 0s;
+}
+.div-promohamburguesa .boton-bait-promohamburguesa:focus {
+  transform: translateX(-850px);
+  transition-delay: 0s;
 }
 
 .main-contacto {
