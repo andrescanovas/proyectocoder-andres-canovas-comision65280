@@ -296,21 +296,25 @@ main .nosotros-grid-img05 {
   padding: 30px;
 }
 .div-promohamburguesa .boton-bait-promohamburguesa {
-  padding: 5px;
-  color: #1F1F1F;
+  padding: 30px;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 0 20px;
   background-color: #FFB02E;
   font-family: "Bebas Neue", serif;
   text-transform: uppercase;
-  font-size: 30px;
-  text-decoration: none;
+  font-size: 20px;
   display: inline-block; /* Para que el enlace pueda moverse */
-  transition: transform 0s ease-in-out; /* Efecto suave */
+  transition: transform 0s; /* Efecto suave */
+  transition: transform 0.2s ease-in-out 1s;
+}
+.div-promohamburguesa .boton-bait-promohamburguesa a {
+  color: #1F1F1F;
+  text-decoration: none;
 }
 .div-promohamburguesa .boton-bait-promohamburguesa:hover {
-  transform: translateX(500px);
+  transform: translateX(850px);
+  transition-delay: 0s; /* Se mueve inmediatamente */
 }
 
 .main-contacto {
