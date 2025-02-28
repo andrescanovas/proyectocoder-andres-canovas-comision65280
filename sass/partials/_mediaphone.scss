@@ -38,7 +38,7 @@
     // NOVEDADES
     .home-novedades {
         padding: 60px;
-        gap: 20px;
+        gap: 10px;
         display: grid !important;
         grid-template-columns: 1fr !important;
         grid-template-rows: 400px 400px 400px;
@@ -83,6 +83,7 @@
 
     }
 
+    // PROMO BOTON
 
     .boton-bait-promohamburguesa:hover {
         transform: translateX(100px) !important;

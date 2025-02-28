@@ -82,6 +82,7 @@ main .galeria {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 main .galeria .galeria-item {
   width: 30%;
@@ -310,11 +311,11 @@ main .nosotros-grid-img05 {
   transition: transform 0.2s ease-in-out 1s;
 }
 .div-promohamburguesa .boton-bait-promohamburguesa:hover {
-  transform: translateX(850px);
+  transform: translateX(400px);
   transition-delay: 0s;
 }
 .div-promohamburguesa .boton-bait-promohamburguesa:focus {
-  transform: translateX(-850px);
+  transform: translateX(-400px);
   transition-delay: 0s;
 }
 
@@ -407,7 +408,7 @@ footer {
   }
   .home-novedades {
     padding: 60px;
-    gap: 20px;
+    gap: 10px;
     display: grid !important;
     grid-template-columns: 1fr !important;
     grid-template-rows: 400px 400px 400px;
@@ -459,6 +460,99 @@ footer {
   }
   .nosotros-grid .texto-contacto2 p {
     font-size: 15px;
+    text-align: justify;
+  }
+  .nosotros-grid .texto-contacto2 .nosotros-grid img {
+    width: auto;
+    height: 90%;
+  }
+  .nosotros-grid-img01 {
+    grid-area: img-01;
+  }
+  .nosotros-grid-img02 {
+    display: none;
+  }
+  .nosotros-grid-img03 {
+    display: none;
+  }
+  .nosotros-grid-img04 {
+    display: none;
+  }
+}
+@media (max-width: 1025px) {
+  .main-contacto {
+    padding: 10px;
+  }
+  .main-contacto form {
+    padding: 20px;
+    width: 700px;
+  }
+  .main-contacto form input {
+    padding: 10px;
+  }
+  .menu-contenedor h2 {
+    text-align: left;
+  }
+  .menu-contenedor .menu-catalogo {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas: "column-1 column-2" "column-3 column-3" !important;
+  }
+  .menu-contenedor .menu-catalogo p {
+    text-align: left;
+  }
+  .home-novedades {
+    padding: 60px;
+    gap: 10px;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .home-novedades .text-nov-home {
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: black;
+    background-color: #1F1F1F;
+    font-size: 20px;
+    box-shadow: 0 0 10px #FFB02E;
+  }
+  .home-novedades .text-nov-home .h5-home {
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px !important;
+  }
+  .galeria .img-d {
+    display: none;
+  }
+  .contenedor-sucursales {
+    display: flex;
+    justify-content: center !important;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .boton-bait-promohamburguesa:hover {
+    transform: translateX(200px) !important;
+  }
+  .boton-bait-promohamburguesa:focus {
+    transform: translateX(-200px) !important;
+    transition-delay: 0s;
+  }
+  .nosotros-grid {
+    justify-items: center;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 200px 200px !important;
+    grid-template-areas: "textonos01 img-01" "textonos01 img-01" "img-05 img-05" !important;
+    gap: 10px;
+    padding: 35px;
+  }
+  .nosotros-grid .texto-contacto2 {
+    font-family: "Bebas Neue", serif;
+    text-align: center;
+    padding-right: 1px;
+  }
+  .nosotros-grid .texto-contacto2 p {
+    font-size: 20px;
     text-align: justify;
   }
   .nosotros-grid .texto-contacto2 .nosotros-grid img {
