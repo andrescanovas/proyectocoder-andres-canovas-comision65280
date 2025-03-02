@@ -37,14 +37,6 @@ header .fondo-nav a:hover {
 main {
   background-color: #1F1F1F;
 }
-main img {
-  width: 100%;
-  height: 100%;
-}
-main .img-home-rectangular {
-  width: 100%;
-  height: 70% !important;
-}
 main .home-novedades {
   padding: 35px;
   gap: 10px;
@@ -66,6 +58,10 @@ main .home-novedades .text-nov-home .h5-home {
   text-transform: uppercase;
   color: black;
   font-size: 60px;
+}
+main .home-novedades img {
+  width: 100%;
+  height: 100% !important;
 }
 main .card01home {
   grid-area: card01home;
@@ -100,6 +96,10 @@ main .galeria .galeria-item p {
   color: #F4EAE0;
   text-decoration: none;
   padding: 10px;
+}
+main .galeria img {
+  width: 100%;
+  height: 100% !important;
 }
 main .menu-contenedor {
   display: flex;
@@ -262,7 +262,7 @@ main .nosotros-grid .texto-contacto2 p {
 }
 main .nosotros-grid .texto-contacto2 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 main .nosotros-grid-img01 {
   grid-area: img-01;
