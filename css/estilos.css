@@ -355,7 +355,7 @@ main .nosotros-grid-img05 {
   box-shadow: 0 0 20px #FFB02E;
   border-radius: 20px;
   text-align: center;
-  width: 1000px;
+  width: 900px;
   background-color: #1F1F1F;
   margin: 10px;
 }
@@ -977,10 +977,6 @@ footer {
     text-align: center;
     background-color: #1F1F1F;
     margin: 10px;
-  }
-  .contenedor-promo-vencida .contenedor-img-promovencida img {
-    width: 100%;
-    height: 100% !important;
   }
   @keyframes efecto-titulo {
     0% {
