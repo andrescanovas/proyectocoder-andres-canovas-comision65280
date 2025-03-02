@@ -700,8 +700,19 @@ footer {
     grid-template-columns: 1fr 1fr !important;
     grid-template-areas: "column-1 column-2" "column-3 column-3" !important;
   }
+  .menu-contenedor .menu-catalogo h3 {
+    font-size: 4vw;
+  }
+  .menu-contenedor .menu-catalogo li {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", serif;
+    text-align: left;
+    color: #8A4F27;
+    font-size: 3vw;
+  }
   .menu-contenedor .menu-catalogo p {
     text-align: left;
+    font-size: 3vw;
   }
   .home-novedades {
     padding: 60px;
