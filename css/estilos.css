@@ -50,14 +50,14 @@ main .home-novedades .text-nov-home {
   text-transform: uppercase;
   color: black;
   background-color: #1F1F1F;
-  font-size: 40px;
+  font-size: 2vw;
   box-shadow: 0 0 10px #FFB02E;
 }
 main .home-novedades .text-nov-home .h5-home {
   font-family: "Bebas Neue", serif;
   text-transform: uppercase;
   color: black;
-  font-size: 60px;
+  font-size: 2.2vw;
 }
 main .home-novedades img {
   width: 100%;
@@ -89,7 +89,7 @@ main .galeria .galeria-item {
   background-color: #8A4F27;
 }
 main .galeria .galeria-item p {
-  font-size: 20px;
+  font-size: 1vw;
   /* font-family: "Lobster", serif; */
   font-family: "Bebas Neue", serif;
   font-style: normal;
