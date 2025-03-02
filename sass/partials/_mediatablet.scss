@@ -112,7 +112,7 @@
             padding-right: 1px;
 
             p {
-                font-size: 20px;
+                font-size: 2vw !important;
                 text-align: justify;
             }
 
@@ -148,7 +148,122 @@
     }
 
 
-
+    //PROMOVENCIDA
+    .contenedor-promo-vencida {
+        padding: 25px;
+        flex-wrap: nowrap;
+    
+        align-content: space-between;
+    
+    
+    
+        .h2-promovencida {
+            color: $blanco;
+            font-family: $fuente;
+            font-size: 100px;
+       
+    
+    
+    
+    
+        }
+    
+        .h3-promovencida {
+            color: $blanco;
+            font-family: $fuente;
+            font-size: 50px;
+        }
+    
+        .contenedor-img-promovencida {
+            
+            box-shadow: 0 0 20px $dorado;
+            border-radius: 20px;
+            text-align: center;
+            width: 800px;
+            max-width: 80%;
+            background-color: $negro;
+            margin: 10px;
+    
+            
+        }
+    
+    
+    
+    
+    
+    }
+    
+    //---------NOMBRE DE LA ANIMACION----
+    @keyframes efecto-titulo {
+        0% {
+            color: $blanco;
+            transform: translate(-20px, -20px);
+    
+        }
+    
+        25% {
+            color: $rojo;
+            transform: translate(20px, -20px);
+    
+        }
+    
+        50% {
+            color: $dorado;
+            transform: translate(20px, -20px);
+        }
+    
+        75% {
+            color: $blanco;
+            transform: translate(20px, -20px);
+        }
+    
+        100% {
+            color: $negro;
+            transform: translate(20px, -20px);
+    
+        }
+    
+    }
+    
+    
+    
+    .animacion-carga {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px;
+        gap: 50px;
+        
+    
+    
+        h2 {
+            color: $blanco;
+            font-family: $fuente;
+            font-size: 40px;
+            animation-name: efecto-titulo; //El nombre es el que se le asignara a la animacion 
+            animation-duration: 1s; //Duracion total de la animacion
+            animation-iteration-count: infinite; // veces que se repite 
+            animation-delay: 1s; //retraso para iniciar
+    
+    
+    
+    
+        }
+    
+        .boton-promo-vencida-volver{
+            
+            a{
+                padding: 10px;
+                font-size: 30px;
+            }
+            
+        }
+    
+    
+    
+    }
 
 
 

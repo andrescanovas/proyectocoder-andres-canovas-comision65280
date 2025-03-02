@@ -1,19 +1,17 @@
-
-
-
-@media (max-width: 450px) {
+@media(max-width: 500px) {
     .main-contacto {
         padding: 10px;
 
         form {
             padding: 20px;
-            width: 350px;
+            width: 340px;
 
             input {
                 padding: 10px;
             }
         }
     }
+
     // MENU
     .menu-contenedor {
         h2 {
@@ -34,6 +32,7 @@
             }
         }
     }
+
     // FIN MENU
     // NOVEDADES
     .home-novedades {
@@ -65,6 +64,7 @@
 
         }
     }
+
     // GALERIA
     .galeria {
 
@@ -72,6 +72,7 @@
 
 
     }
+
     // SUCURSALES
     .contenedor-sucursales {
         display: flex;
@@ -89,10 +90,12 @@
         transform: translateX(100px) !important;
 
     }
-    .boton-bait-promohamburguesa:focus{
+
+    .boton-bait-promohamburguesa:focus {
         transform: translateX(-100px) !important;
-             transition-delay: 0s; 
-        }  
+        transition-delay: 0s;
+    }
+
     // NOSOTROS
 
     .nosotros-grid {
@@ -100,7 +103,7 @@
 
         justify-items: center;
         grid-template-columns: 1fr !important;
-        grid-template-rows: 200px 200px repeat(2, 300px) !important;
+        grid-template-rows: 200px 150px repeat(2, 300px) !important;
         grid-template-areas:
             "textonos01"
             "textonos01"
@@ -119,7 +122,7 @@
             padding-right: 1px;
 
             p {
-                font-size: 15px;
+                font-size: 15px !important;
                 text-align: justify;
             }
 
@@ -143,21 +146,141 @@
     }
 
     .nosotros-grid-img02 {
-        display: none;
+        grid-area: img-02;
     }
 
     .nosotros-grid-img03 {
-        display: none;
+        grid-area: img-03;
     }
 
     .nosotros-grid-img04 {
-        display: none;
+        grid-area: img-04;
+    }
+
+    .nosotros-grid-img05 {
+        grid-area: img-05;
+    }
+
+
+
+
+   //PROMOVENCIDA
+
+   
+   .contenedor-promo-vencida {
+    padding: 25px;
+    flex-wrap: nowrap;
+
+    align-content: space-between;
+
+
+
+    .h2-promovencida {
+        color: $blanco;
+        font-family: $fuente;
+        font-size: 30px;
+   
+
+
+
+
+    }
+
+    .h3-promovencida {
+        color: $blanco;
+        font-family: $fuente;
+        font-size: 25px;
+    }
+
+    .contenedor-img-promovencida {
+        
+        box-shadow: 0 0 20px $dorado;
+        border-radius: 20px;
+        text-align: center;
+        width: 320px;
+        background-color: $negro;
+        margin: 10px;
+
+        
     }
 
 
 
 
 
+}
+
+//---------NOMBRE DE LA ANIMACION----
+@keyframes efecto-titulo {
+    0% {
+        color: $blanco;
+        transform: translate(-20px, -20px);
+
+    }
+
+    25% {
+        color: $rojo;
+        transform: translate(20px, -20px);
+
+    }
+
+    50% {
+        color: $dorado;
+        transform: translate(20px, -20px);
+    }
+
+    75% {
+        color: $blanco;
+        transform: translate(20px, -20px);
+    }
+
+    100% {
+        color: $negro;
+        transform: translate(20px, -20px);
+
+    }
+
+}
+
+
+
+.animacion-carga {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+    
+
+
+    h2 {
+        color: $blanco;
+        font-family: $fuente;
+        font-size: 20px;
+        animation-name: efecto-titulo; //El nombre es el que se le asignara a la animacion 
+        animation-duration: 1s; //Duracion total de la animacion
+        animation-iteration-count: infinite; // veces que se repite 
+        animation-delay: 1s; //retraso para iniciar
+
+
+
+
+    }
+
+    .boton-promo-vencida-volver{
+        
+        a{
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+    }
+
+
+
+}
 
 
 
