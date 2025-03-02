@@ -260,9 +260,9 @@ main .nosotros-grid .texto-contacto2 h2 {
 main .nosotros-grid .texto-contacto2 p {
   font-size: 1.2vw;
 }
-main .nosotros-grid .texto-contacto2 img {
+main .nosotros-grid img {
   width: 100%;
-  height: auto;
+  height: 100% !important;
 }
 main .nosotros-grid-img01 {
   grid-area: img-01;
