@@ -287,6 +287,10 @@ main .nosotros-grid-img05 {
   flex-direction: column;
   align-items: center;
 }
+.div-promohamburguesa img {
+  width: 100%;
+  height: 100% !important;
+}
 .div-promohamburguesa .div-promohamburguesa-texto {
   display: flex;
   flex-direction: column;
@@ -352,12 +356,15 @@ main .nosotros-grid-img05 {
   border-radius: 20px;
   text-align: center;
   width: 1000px;
-  max-width: 80%;
   background-color: #1F1F1F;
   margin: 10px;
 }
 .contenedor-promo-vencida .contenedor-img-promovencida img {
   border-radius: 20px;
+}
+.contenedor-promo-vencida img {
+  width: 100%;
+  height: 100% !important;
 }
 
 @keyframes efecto-titulo {
@@ -968,9 +975,12 @@ footer {
     box-shadow: 0 0 20px #FFB02E;
     border-radius: 20px;
     text-align: center;
-    width: 320px;
     background-color: #1F1F1F;
     margin: 10px;
+  }
+  .contenedor-promo-vencida .contenedor-img-promovencida img {
+    width: 100%;
+    height: 100% !important;
   }
   @keyframes efecto-titulo {
     0% {
